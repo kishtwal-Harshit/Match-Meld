@@ -1,0 +1,175 @@
+* {
+  margin: auto;
+  padding: 0%;
+}
+
+/* Adjust text size for small devices */
+@media only screen and (max-width: 600px) {
+  .navbar .navTag {
+    font-size: 15px; /* Adjust font size as needed */
+  }
+
+  .h2, .inputForApplication label, .inpApplication1::before {
+    font-size: 15px; /* Adjust font size for small screens */
+    padding: 5px; /* Adjust padding for better spacing */
+  }
+
+  .inpApplication {
+    height: max-content;
+  }
+
+  .inputForApplication input {
+    font-size: 10px; /* Adjust font size of input */
+  }
+
+  .submit { 
+    font-size: 15px !important;/* Shrink font size */
+    height: 25px !important; /* Shrink height */
+    width: 80px !important; /* Shrink width */
+    padding: 2px; /* Adjust padding */
+  }
+
+  /* Adjust dimensions of input and "No file chosen" text */
+  .inpApplication1,
+  .inpApplication1::before {
+    font-size: 10px; /* Adjust font size for file input */
+    height: 20px; /* Set height */
+    line-height: 20px; /* Set line height */
+    padding: 2px 5px; /* Adjust padding (top and bottom) */
+  }
+
+  /* Adjust padding and margin of input[type="file"] */
+  input[type="file"] {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+/* Navbar and container styles */
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: rgb(207, 205, 205);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  overflow: hidden;
+  height: 60px;
+}
+
+.navTag {
+  font-size: larger;
+  color: #fff;
+  text-decoration: none;
+  min-width: 100px; /* Set a minimum width to prevent text from merging */
+  text-align: center; /* Center-align text within the navbar items */
+}
+
+.navTag:hover {
+  background-color: rgb(106, 105, 105);
+}
+
+/* Left section styles */
+.leftSection {
+  display: flex;
+  flex-direction: column; /* Adjusted to column */
+  justify-content: center; /* Center-align items vertically */
+  align-items: center; /* Center-align items horizontally */
+  background-color: #fff;
+  height: 92.6vh;
+  width: 38vw;
+  position: absolute;
+  margin-left: 0%;
+}
+
+.h2 {
+  margin-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputForApplication {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center-align items horizontally */
+  flex-direction: column; /* Adjusted to column */
+  margin-top: -50px; /* Adjust margin as needed */
+  margin-left: 0px;
+  font-size: larger;
+}
+
+.inp {
+  width: 20px;
+  height: 24px;
+}
+
+.submit {
+  margin-top: 10px; /* Align to the middle */
+  background-color: rgb(0, 100, 255); 
+  color: #fff;
+  height: 40px; /* Reset height */
+  width: auto; /* Reset width */
+  width: 110px;
+  margin-top: 40px;
+  font-size: 20px; /* Reset font size */
+}
+
+.submit:hover {
+  transform: scale(1.1);
+  background-color: rgb(8, 69, 161);
+  transition-duration: 0.1s;
+}
+
+/* File input styles */
+.inpApplication1 {
+  background-color: gray;
+  color: #fff;
+  height: 16.9px;
+  max-width: 130px;
+  line-height: 1.5; /* Adjust line height */
+  word-wrap: break-word; /* Allow long words to break into multiple lines */
+}
+
+.inpApplication {
+  height: 20px;
+}
+
+.inpApplication1::before {
+  font-size: 10px; /* Adjust font size for file input */
+}
+
+/* Right section styles */
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 38vw;
+  height: 92vh;
+  width: auto;
+}
+
+/* Suggestions styles */
+.suggestions {
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  margin-top: 50px;
+  text-align: center; 
+  font-size: 1.2em; 
+  max-width: 80%; 
+  margin: 0 auto; 
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.suggestions h2 {
+  font-size: 24px; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
+}

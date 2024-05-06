@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchMeld</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai"></script>
+    <div class="container">
+        <!-- navbar -->
+        <nav class="navbar">
+            
+              <a href="about.html" class="navTag" id="navTag1">About Match-Meld</a></li>
+              <a href="resources.html" class="navTag" id="navTag2">Resources</a></li>
+              <a href="blogsAndUpdates.html" class="navTag" id="navTag3">Blog/Updates</a></li>
+            
+          </nav>
+        <!-- content section -->
+        <div class="content">
+            <!-- left Section -->
+            <div class="leftSection">
+                <h2 class="h2">WELCOME TO MATCH MELD</h2>
+                <div class="inputForApplication">
+                  <span>
+                        <label for="fileInput" class="inpApplication">Choose application file: </label>
+                        <input type="file" id="fileInput" class="inpApplication1" title="" placeholder="">
+                  </span>
+                        <button class="submit" >SUBMIT</button>
+                </div>
+            </div>
+            <div class="rightSection">
+              
+            </div>
+            </div>
+        </div>
+       
+
+    </div>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+      <script type="module" src="index.js"></script>
+</body>
+</html>

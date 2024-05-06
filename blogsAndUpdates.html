@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Carousel with Text Overlay</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-item {
+      position: relative;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; /* Text color */
+    }
+
+    /* Adjust text size for small devices */
+    @media only screen and (max-width: 600px) {
+      .carousel-caption p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+      }
+    }
+
+    /* Adjust text size for large devices */
+    @media only screen and (min-width: 601px) {
+      .carousel-caption p {
+        font-size: 24px; /* Increase font size significantly for larger screens */
+      }
+    }
+
+    /* Adjust image size for small devices */
+    @media only screen and (max-width: 600px) {
+      .carousel-item img {
+        height: 100vh; /* Adjust image height for smaller screens */
+        width: 100%; /* Adjust image width for smaller screens */
+      }
+    }
+
+    /* Adjust image size for large devices */
+    @media only screen and (min-width: 601px) {
+      .carousel-item img {
+        height: 100vh; /* Keep image height same for larger screens */
+        width: auto; /* Adjust image width for larger screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/img1.png" alt="First slide">
+      <div class="carousel-caption">
+        <p>WELCOME TO MATCH MELD</p>
+        <p>THIS APPLICATION IS STILL IN STARTING PHASE...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/img1.png" alt="Second slide">
+      <div class="carousel-caption">
+        <p>NEW FEATURE LAUNCHING SOON...</p>
+        <p>ASSESS RESUME FIT FOR TARGET JOBS</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/img1.png" alt="Third slide">
+      <div class="carousel-caption">
+        <p>STAY CONNECTED TO ENJOY FREE SERVICES AND USEFUL FEATURES...</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Bootstrap JS (optional, if you want to use carousel controls) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

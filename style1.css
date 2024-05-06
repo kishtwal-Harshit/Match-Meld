@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+#animated-text{
+    font-size: 20px;
+}
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(207, 205, 205);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px; /* Added padding for responsiveness */
+}
+
+.content {
+    margin-top: -10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    font-size: 16px; /* Default font size */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.content:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 10px #333;
+}
+
+.email::before,
+.linkedin::before {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.para {
+    font-size: 20px; /* Increase font size */
+    margin: 0; /* Remove default margin */
+    padding: 0 10px; /* Adjust padding */
+    line-height: 20px; /* Set line height to match font size */
+}
+a{
+    font-size: 20px
+}
+.contact-info {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Adjust padding */
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.contact-info p {
+    font-size: 35px; /* Default font size for contact details */
+    margin: 0; /* Remove default margin */
+    padding: 0 10px; /* Adjust padding */
+}
+
+.contact-info p::before {
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 20px; /* Default font size for icons */
+}
+
+.contact-info a {
+    margin: 0 10px; /* Adjust margin between links */
+}
+
+/* Adjust text size for large devices */
+@media only screen and (max-width: 600px) {
+  .content {
+    font-size: 12px; /* Increase font size for larger screens */
+  }
+  #animated-text{
+    font-size: 14px;
+  }
+  .contact-info p {
+    font-size: 15px !important; /* Increase font size for larger screens */
+  }
+  .contact-info a {
+    font-size: 14px; /* Increase font size for icons on larger screens */
+  }
+}
